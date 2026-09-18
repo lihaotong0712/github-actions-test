@@ -7,7 +7,7 @@ jobs:
       - name: test command
         run: |
           id -a
-          systemctl start nginx
-          systemctl start mysql
-          systemctl status nginx
-          systemctl status mysql
+          sudo systemctl start nginx
+          sudo systemctl start mysql
+          sudo systemctl status nginx
+          sudo systemctl status mysql
