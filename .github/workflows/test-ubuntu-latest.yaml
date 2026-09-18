@@ -1,6 +1,6 @@
 on:
   workflow_dispatch:
-job:
+jobs:
   test-ubuntu-latest:
     runs-on: ubuntu-latest
     steps:
