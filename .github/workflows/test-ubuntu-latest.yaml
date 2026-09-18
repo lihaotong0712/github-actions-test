@@ -1,0 +1,13 @@
+on:
+  workflow_dispatch:
+job:
+  test-ubuntu-latest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test command
+        run: |
+          id -a
+          systemctl start nginx
+          systemctl start mysql
+          systemctl status nginx
+          systemctl status mysql
