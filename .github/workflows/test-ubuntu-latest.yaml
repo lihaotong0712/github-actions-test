@@ -11,3 +11,4 @@ jobs:
           sudo systemctl start mysql
           sudo systemctl status nginx
           sudo systemctl status mysql
+      - uses: crazy-max/ghaction-github-runtime@v4
