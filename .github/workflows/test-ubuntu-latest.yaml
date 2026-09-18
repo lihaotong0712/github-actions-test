@@ -12,3 +12,5 @@ jobs:
           sudo systemctl status nginx
           sudo systemctl status mysql
       - uses: crazy-max/ghaction-github-runtime@v4
+      - run: |
+          env | sort
